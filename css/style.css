@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* ------------------------------- MENU / LOGO ------------------------------ */
+
+.menu {
+    display: flex;
+    background-color: #000000;
+}
+
+#logo img {
+    height: auto;
+    width: 155px;
+    margin-top: 12px;
+    margin-left: 35px;
+}
+
+/* ------------------------------- LOGO DA PÁGINA -------------------------- */
+
+.logo-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* ----------------------- TEXTO PRINCIPAL ---------------------------------- */
+
+.texto-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    box-shadow: 0 4px 20px 0 Black;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#texto1 {
+    text-align: center;
+    font-style: italic;
+    font-size: 23px;
+    margin-top: 15px;
+}
+
+#texto2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 82px;
+}
+
+#texto2:hover {
+    color: rgb(0, 189, 189);
+}
+
+#texto3 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* ---------------------------------- LISTA DE CAMPEÕES --------------------- */
+
+.lista-campeoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 20px 0 Black;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 100px;
+}
+
+.lista-campeoes img {
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.lista-campeoes img:hover {
+    box-shadow: 0 4px 20px 0 Black;
+    border-bottom: solid 5px #50e6ec;
+}
+
+/* ---------------------------------- NOME DOS CAMPEÕES --------------------- */
+
+.nome-campeoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 5px #50e6ec;
+    margin-bottom: 3px;
+}
+
+.nome-campeoes span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-top: 6px;
+    font-style: oblique;
+}
+
+/* ---------------------------------- RODAPÉ -------------------------------- */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    background-color: black;
+}
+
+.rodape-aviso {
+    color: aqua;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.rodape-aviso:hover {
+    background-color: rgb(104, 104, 104);
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.rodape-selo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.rodape-copyright {
+    color: aqua;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ---------------------------------- MENU / EFEITOS ------------------------ */
+
+nav.bg {   
+    width:100%;
+    float:left; 
+    text-align:center;  
+    background-color: #000000;
+    padding:1.5em 0em; 
+}
+nav a {
+    position: relative;
+    display: inline-block;
+    margin:5px 30px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition:0.6s; 
+}
+nav a:hover,
+nav a:focus {
+    transition:0.4s;
+    outline: none;
+    color:#50e6ec; 
+}
+.hover-circulo a::before,
+.hover-circulo a::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75px;
+    height: 75px;
+    border: 2px solid rgba(99, 230, 235, 0.18);
+    border-radius: 50%;
+    content: '';
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+    transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+.hover-circulo a::after {
+    width: 50px;
+    height: 50px;
+    border-width: 6px;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+.hover-circulo a:hover::before,
+.hover-circulo a:hover::after,
+.hover-circulo a:focus::before,
+.hover-circulo a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+    -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
